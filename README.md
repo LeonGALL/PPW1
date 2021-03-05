@@ -1,2 +1,4 @@
 # PPW1
-Project web programming 1
+First web programming project
+
+This website presents an animation of particles using Newton's gravitational equation.
