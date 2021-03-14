@@ -1,9 +1,70 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Meta informations -->
     <meta charset="UTF-8" />
+    <meta name="author" content="Léon GALL, Nicolas JARDINÉ" />
+    <meta
+      name="description"
+      content="Projet de programmation web sur la mécanique céleste"
+    />
+    <meta name="keywords" content="Mécanique céleste, particules" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="images/favicon_atome.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Titre du document -->
     <title>Mécanique céleste</title>
   </head>
-  <body></body>
+
+  <body>
+    <!-- Titre -->
+    <header>
+      <h1>Mécanique céleste</h1>
+    </header>
+
+    <!-- Zone d'affichage -->
+    <div id="zoneaffiche">
+      <!-- Canvas pour l'application -->
+      <canvas id="affichage" width="800" height="600"></canvas>
+
+      <!-- Élément de contrôle -->
+      <div id="zonecontrole">
+        <!-- Afficher/Masquer la zône de contrôle -->
+        <h3 id="affichercontrole">Afficher</h3>
+
+        <!-- Zône de contrôle -->
+        <div id="controle">
+          
+          <!-- Explications -->
+          <h2 id="ajoutParticules">Ajout de particules</h2>
+          <p id="explications">
+            Explications Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Adipisci voluptates sequi ducimus totam aut tenetur!
+            Asperiores corrupti, est, earum vel sequi nihil minus a doloribus,
+            amet excepturi cumque provident harum?
+          </p>
+
+          <!-- Formulaire de contrôle -->
+          <form action="POST" id="formparticules"></form>
+        </div>
+
+        <!-- Boutons de contrôle -->
+        <div id="btn">
+          <button id="demarrer">Démarrer</button>
+          <button id="arreter">Arrêter</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer>
+      <p>Copyright Léon GALL, Nicolas JARDINÉ, 2021.</p>
+    </footer>
+  </body>
 </html>
