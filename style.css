@@ -1,0 +1,158 @@
+/* Feuille de style */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/* Style du corps de la page: */
+body {
+  min-height: 100%;
+  background-color: #171919;
+  color: #ffffff;
+  font-family: sans-serif, "Segoe UI", Tahoma;
+}
+
+/* Style du titre de la page: */
+header {
+  background-color: #28c2c2;
+  padding: 10px;
+  margin: 0px 0px 10px 0px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Style du titre du panneau de contrôle: */
+#ajoutParticules {
+  border-width: 1px 1px 1px 10px;
+  padding: 5px;
+  margin: 0px;
+  border-style: solid;
+  border-color: #28c2c2;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Style des labels pour le formulaire: */
+form label {
+  display: inline-block;
+  width: 30%;
+}
+
+/* Style du canvas contenant l'animation: */
+#affichage {
+  position: absolute;
+  border: 1px solid #28c2c2;
+  z-index: -1;
+}
+
+/* Style de la zône de contrôle: */
+#controle {
+  display: block;
+}
+#sous_controle {
+  margin:0px;
+  padding: 7px;
+  background-color: rgba(40, 194, 194, 0.2);
+}
+#zone_controle {
+  width: 300px;
+}
+
+/* Style des boutons: */
+#btn {
+  /* Conteneur des boutons */
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.bouton {
+  /* Styles s'appliquant sur les deux boutons */
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 1000;
+  text-justify: center;
+  cursor: pointer;
+  border: 1px solid #28c2c2;
+  border-radius: 15px;
+  width: 150px;
+  height: 40px;
+}
+
+#demarrer {
+  /* Styles ne s'appliquant qu'au bouton démarrer. */
+  background-color: rgba(102, 255, 102, 0.9);
+}
+
+#demarrer:hover::before {
+  /* Styles s'appliquant en ::before lorsque démarrer est survolé */
+  transition: 5ms;
+  content: "\25BA  ";
+}
+
+#demarrer:hover {
+  /* Styles s'appliquant lorsque démarrer est survolé */
+  background-color: rgba(102, 255, 102, 0.8);
+}
+
+#demarrer:active {
+  /* Styles s'appliquant lorsque démarrer est activé */
+  background-color: springgreen;
+}
+
+#arreter {
+  /* Styles ne s'appliquant qu'au bouton arreter. */
+  background-color: rgba(255, 51, 51, 0.9);
+}
+
+#arreter:hover {
+  /* Styles s'appliquant lorsque arreter est survolé */
+  background-color: rgba(255, 51, 51, 0.8);
+}
+
+#arreter:active {
+  /* Styles s'appliquant lorsque arreter est activé */
+  background-color: tomato;
+}
+
+#arreter:hover::before {
+  /* Styles s'appliquant en ::before lorsque arreter est survolé */
+  transition: 5ms;
+  content: "\25A9  ";
+}
+
+/* Style du color picker: */
+#color {
+ width:  50px;
+ border: 1px solid #28c2c2;
+ padding: 0px;
+}
+
+/* Centrer zone_affiche à l'aide de flexbox: */
+#containerflex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.toflex {
+  flex-grow: 1;
+}
+#zone_affiche {
+  flex-grow: 2;
+}
+
+/* Style du pied de page: */
+footer {
+  opacity: 0.75;
+  z-index: -2;
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  bottom: 0;
+  border-top: 1px solid #28c2c2;
+  text-align: center;
+}

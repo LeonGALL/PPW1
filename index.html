@@ -18,6 +18,8 @@
       type="image/x-icon"
     />
 
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
     <!-- Titre du document -->
     <title>Mécanique céleste</title>
   </head>
@@ -28,43 +30,63 @@
       <h1>Mécanique céleste</h1>
     </header>
 
-    <!-- Zone d'affichage -->
-    <div id="zoneaffiche">
-      <!-- Canvas pour l'application -->
-      <canvas id="affichage" width="800" height="600"></canvas>
+    <!-- Div pour Flexbox -->
+    <div id="containerflex">
+      <!-- Div pour Flexbox -->
+      <div class="toflex"></div>
 
-      <!-- Élément de contrôle -->
-      <div id="zonecontrole">
-        <!-- Afficher/Masquer la zône de contrôle -->
-        <h3 id="affichercontrole">Afficher</h3>
+      <!-- Zone d'affichage -->
+      <div id="zone_affiche">
+        <!-- Canvas pour l'application -->
+        <canvas id="affichage" width="800" height="600"></canvas>
 
-        <!-- Zône de contrôle -->
-        <div id="controle">
-          
-          <!-- Explications -->
-          <h2 id="ajoutParticules">Ajout de particules</h2>
-          <p id="explications">
-            Explications Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Adipisci voluptates sequi ducimus totam aut tenetur!
-            Asperiores corrupti, est, earum vel sequi nihil minus a doloribus,
-            amet excepturi cumque provident harum?
-          </p>
+        <!-- Élément de contrôle -->
+        <div id="zone_controle">
+          <!-- Afficher/Masquer la zône de contrôle -->
+          <h3 id="afficher_controle">Afficher</h3>
 
-          <!-- Formulaire de contrôle -->
-          <form action="POST" id="formparticules"></form>
-        </div>
+          <!-- Zône de contrôle -->
+          <div id="controle">
+            <!-- Explications -->
 
-        <!-- Boutons de contrôle -->
-        <div id="btn">
-          <button id="demarrer">Démarrer</button>
-          <button id="arreter">Arrêter</button>
+            <h2 id="ajoutParticules">Ajout de particules</h2>
+            <div id="sous_controle">
+              <p id="explications">
+                Pour ajouter des particules, double-cliquer dans le canvas. La
+                particule ajoutée aura les propriétés définies ci-dessous.
+              </p>
+
+              <!-- Formulaire de contrôle -->
+              <form action="POST" id="formparticules">
+                <label for="masse">Masse:</label>
+                <input
+                  type="range"
+                  name="masse"
+                  min="0"
+                  max="500"
+                  step="1"
+                  id="masse"
+                />
+                <br />
+                <label for="color">Couleur:</label>
+                <input type="color" name="color" id="color" />
+              </form>
+            </div>
+          </div>
+          <!-- Boutons de contrôle -->
+          <div id="btn">
+            <button id="demarrer" class="bouton">Démarrer</button>
+            <button id="arreter" class="bouton">Arrêter</button>
+          </div>
         </div>
       </div>
-    </div>
 
+      <!-- Div pour Flexbox -->
+      <div class="toflex"></div>
+    </div>
     <!-- Pied de page -->
     <footer>
-      <p>Copyright Léon GALL, Nicolas JARDINÉ, 2021.</p>
+      <p>&copy; Copyright Léon GALL, Nicolas JARDINÉ, 2021.</p>
     </footer>
   </body>
 </html>
