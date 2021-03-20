@@ -151,9 +151,11 @@ form label {
 footer {
   opacity: 0.75;
   z-index: -2;
-  position: absolute;
   width: 100%;
-  padding: 10px;
+  position: absolute;
+  
+  overflow: hidden;
+  padding: 10px 0px;
   bottom: 0;
   border-top: 1px solid #28c2c2;
   text-align: center;
