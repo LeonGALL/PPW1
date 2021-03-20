@@ -7,7 +7,7 @@
 
 /* Style du corps de la page: */
 body {
-  min-height: 100%;
+  cursor: default;
   background-color: #171919;
   color: #ffffff;
   font-family: sans-serif, "Segoe UI", Tahoma;
@@ -33,9 +33,41 @@ header {
 }
 
 /* Style des labels pour le formulaire: */
+#afficher_controle {
+  cursor: pointer;
+  margin: 10px 0px;
+  text-align: center;
+  color: #28c2c2;
+}
 form label {
   display: inline-block;
   width: 30%;
+}
+#value_masse {
+  border: 1px solid #28c2c2;
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+/* Style du color picker: */
+#color {
+  width: 50px;
+  border: 1px solid #28c2c2;
+  padding: 0px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Style de du slider pour la masse: */
+#masse {
+  -webkit-appearance: none;
+  cursor: pointer;
+  outline: none;
+  height: 10px;
+  border-radius: 10px;
+  background-color: rgba(40, 194, 194, 0.5);
 }
 
 /* Style du canvas contenant l'animation: */
@@ -47,7 +79,7 @@ form label {
 
 /* Style de la zône de contrôle: */
 #controle {
-  display: block;
+  display: none;
 }
 #sous_controle {
   margin: 0px;
@@ -74,6 +106,7 @@ form label {
 
 .bouton {
   /* Styles s'appliquant sur les deux boutons */
+  outline: none;
   padding: 10px 15px;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
@@ -81,7 +114,7 @@ form label {
   font-weight: 1000;
   text-justify: center;
   cursor: pointer;
-  border: 1px solid #28c2c2;
+  border: 0px;
   border-radius: 15px;
   width: 150px;
   height: 40px;
@@ -92,48 +125,9 @@ form label {
   background-color: rgba(102, 255, 102, 0.9);
 }
 
-#demarrer:hover::before {
-  /* Styles s'appliquant en ::before lorsque démarrer est survolé */
-  transition: 5ms;
-  content: "\25BA  ";
-}
-
-#demarrer:hover {
-  /* Styles s'appliquant lorsque démarrer est survolé */
-  background-color: rgba(102, 255, 102, 0.8);
-}
-
-#demarrer:active {
-  /* Styles s'appliquant lorsque démarrer est activé */
-  background-color: springgreen;
-}
-
 #arreter {
   /* Styles ne s'appliquant qu'au bouton arreter. */
   background-color: rgba(255, 51, 51, 0.9);
-}
-
-#arreter:hover {
-  /* Styles s'appliquant lorsque arreter est survolé */
-  background-color: rgba(255, 51, 51, 0.8);
-}
-
-#arreter:active {
-  /* Styles s'appliquant lorsque arreter est activé */
-  background-color: tomato;
-}
-
-#arreter:hover::before {
-  /* Styles s'appliquant en ::before lorsque arreter est survolé */
-  transition: 5ms;
-  content: "\25A9  ";
-}
-
-/* Style du color picker: */
-#color {
-  width: 50px;
-  border: 1px solid #28c2c2;
-  padding: 0px;
 }
 
 /* Centrer zone_affiche à l'aide de flexbox: */

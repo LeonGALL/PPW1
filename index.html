@@ -23,7 +23,6 @@
     <!-- Titre du document -->
     <title>Mécanique céleste</title>
   </head>
-
   <body>
     <!-- Titre -->
     <header>
@@ -43,7 +42,7 @@
         <!-- Élément de contrôle -->
         <div id="zone_controle">
           <!-- Afficher/Masquer la zône de contrôle -->
-          <h3 id="afficher_controle">Afficher</h3>
+          <h3 id="afficher_controle">&dArr; Afficher les contrôles</h3>
 
           <!-- Zône de contrôle -->
           <div id="controle">
@@ -67,6 +66,7 @@
                   step="1"
                   id="masse"
                 />
+                <label for="masse" id="value_masse">0</label>
                 <br />
                 <label for="color">Couleur:</label>
                 <input type="color" name="color" id="color" />
@@ -88,4 +88,5 @@
       <p>&copy; Copyright Léon GALL, Nicolas JARDINÉ, 2021.</p>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
