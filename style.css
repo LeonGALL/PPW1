@@ -5,7 +5,6 @@
   padding: 0px;
 }
 
-
 /* Style du corps de la page: */
 body {
   min-height: 100%;
@@ -51,12 +50,17 @@ form label {
   display: block;
 }
 #sous_controle {
-  margin:0px;
-  padding: 7px;
+  margin: 0px;
+  padding: 10px;
   background-color: rgba(40, 194, 194, 0.2);
 }
+#explications {
+  text-align: justify;
+  font-size: 14px;
+  margin: 15px 0;
+}
 #zone_controle {
-  width: 300px;
+  width: 400px;
 }
 
 /* Style des boutons: */
@@ -127,22 +131,26 @@ form label {
 
 /* Style du color picker: */
 #color {
- width:  50px;
- border: 1px solid #28c2c2;
- padding: 0px;
+  width: 50px;
+  border: 1px solid #28c2c2;
+  padding: 0px;
 }
 
 /* Centrer zone_affiche à l'aide de flexbox: */
+/* Pour centrer cet élément avec flexbox, j'ai rajouté une div de container (id="containerflex") ainsi que deux div (class="toflex").
+    Le container est affiché en flex avec une direction en ligne.
+    Les div toflex ont un flex-grow de 1, tandis que la zone d'affichage aura un flex-grow à 0 (non précisé car de base) mais un flex-basis à 800px
+    soit la largeur du canvas. 
+    Ainsi, la zone de 800px de large contenant le canvas sera toujours centrée, avec les deux div de coté variant de taille.*/
 #containerflex {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
 }
 .toflex {
   flex-grow: 1;
 }
 #zone_affiche {
-  flex-grow: 2;
+  flex-basis: 800px;
 }
 
 /* Style du pied de page: */
@@ -155,4 +163,5 @@ footer {
   bottom: 0;
   border-top: 1px solid #28c2c2;
   text-align: center;
+  background-color: rgba(40, 194, 194, 0.2);
 }
