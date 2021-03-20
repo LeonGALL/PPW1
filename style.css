@@ -20,6 +20,7 @@ header {
   margin: 0px 0px 10px 0px;
   text-transform: uppercase;
   text-align: center;
+  min-width: 800px;
 }
 
 /* Style du titre du panneau de contrôle: */
@@ -152,8 +153,8 @@ footer {
   opacity: 0.75;
   z-index: -2;
   width: 100%;
+  min-width: 820px;
   position: absolute;
-  
   overflow: hidden;
   padding: 10px 0px;
   bottom: 0;
