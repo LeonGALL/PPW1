@@ -154,8 +154,7 @@ footer {
   z-index: -2;
   width: 100%;
   min-width: 820px;
-  position: absolute;
-  overflow: hidden;
+  position: fixed;
   padding: 10px 0px;
   bottom: 0;
   border-top: 1px solid #28c2c2;
