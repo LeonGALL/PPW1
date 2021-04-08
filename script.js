@@ -63,6 +63,6 @@ var valmasse = document.getElementById("masse");
 
 changetxt(aff_valmasse, valmasse.value);
 
-valmasse.oninput = function () {
+valmasse.addEventListener("input", function () {
   changetxt(aff_valmasse, this.value);
-};
+});
