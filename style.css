@@ -75,6 +75,7 @@ form label {
 #affichage {
   position: absolute;
   border: 1px solid #28c2c2;
+  background-color: #171919;
   z-index: -1;
 }
 
