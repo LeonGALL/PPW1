@@ -147,6 +147,7 @@ form label {
 }
 #zone_affiche {
   flex-basis: 800px;
+  height: 0px; /* Pour que cette div ne prenne pas de hauteur, et laisser la place à l'animation dans le canvas (sinon on ne peut pas double-cliquer) */
 }
 
 /* Style du pied de page: */
