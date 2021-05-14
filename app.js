@@ -111,7 +111,7 @@ grandeParticule.draw();
 
 
 // Ajout de particules par double clic sur le canvas
-canvas.addEventListener("dblclick", function () {
+canvas.addEventListener("dblclick", function (event) {
   addParticule(event, tabParticules);
 });
 
